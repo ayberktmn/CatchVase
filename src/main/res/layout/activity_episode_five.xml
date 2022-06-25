@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EpisodeFive">
+
+    <GridLayout
+        android:id="@+id/gridLayout4"
+        android:layout_width="296dp"
+        android:layout_height="303dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803">
+
+        <ImageView
+            android:id="@+id/vazo2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="decrease"
+            app:srcCompat="@drawable/bomba"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/vazo5"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/vazo10"
+            android:layout_width="98dp"
+            android:layout_height="103dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="decrease"
+            app:srcCompat="@drawable/bomba"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/timeText7"
+        android:layout_width="179dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginBottom="481dp"
+        android:gravity="center"
+        android:text="Time: 15"
+        android:textColor="#FF0000"
+        android:textColorHighlight="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scoreText6"
+        app:layout_constraintTop_toBottomOf="@+id/scoreText6" />
+
+    <TextView
+        android:id="@+id/scoreText6"
+        android:layout_width="178dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textColor="#05CBFB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeText7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
